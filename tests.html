@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SRL Lab Mohali | Home Collection Booking & Pathology Lab in Sector 69</title>
+<meta name="description" content="Book blood test home collection in Mohali today with SRL Lab Mohali. Trusted pathology testing, complete body checkups in Sector 69, SAS Nagar, Mohali. Call 8264423443 for instant booking.">
+<meta name="keywords" content="SRL Lab Mohali, SRL Lab Mohali Home Collection Booking, pathology lab near Gurukul World School, blood test Sector 69 SAS Nagar Mohali, best blood sample collection, home collection Mohali, SRL diagnostics Mohali, full body checkup Mohali">
+<link rel="canonical" href="https://www.srllabmohali.in/tests.html">
+<link rel="stylesheet" href="assets/css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+:root{--blue:#0075BB;--green:#42AF55;--red:#ED1C24;--yellow:#FFCB05;}
+/* SEARCH BAR */
+.search-wrap{background:linear-gradient(135deg,#0075BB,#004a80);padding:40px 0 60px;}
+.search-box{position:relative;max-width:680px;margin:24px auto 0;}
+.search-box input{width:100%;padding:20px 64px 20px 24px;border:none;border-radius:50px;font-size:1.05rem;font-family:'Outfit',sans-serif;box-shadow:0 8px 32px rgba(0,0,0,0.25);outline:none;}
+.search-box i{position:absolute;right:24px;top:50%;transform:translateY(-50%);color:var(--blue);font-size:1.2rem;}
+.search-filters{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:18px;}
+.filter-btn{padding:8px 20px;border:2px solid rgba(255,255,255,0.5);color:#fff;background:transparent;border-radius:50px;font-size:0.85rem;font-weight:600;cursor:pointer;font-family:'Outfit',sans-serif;transition:.25s;}
+.filter-btn:hover,.filter-btn.active{background:#fff;color:var(--blue);}
+/* RESULTS COUNT */
+.results-bar{display:flex;align-items:center;justify-content:space-between;padding:14px 0;margin-bottom:6px;}
+.results-count{font-size:0.9rem;color:#666;font-weight:500;}
+/* PACKAGE CARDS - PREMIUM */
+.pkg-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px;margin-top:10px;}
+.pkg-card{background:#fff;border-radius:20px;overflow:hidden;box-shadow:0 4px 24px rgba(0,117,187,0.09);transition:.3s;position:relative;display:flex;flex-direction:column;}
+.pkg-card:hover{transform:translateY(-6px);box-shadow:0 12px 40px rgba(0,117,187,0.18);}
+.pkg-card-header{padding:28px 24px 20px;position:relative;overflow:hidden;}
+.pkg-card-header::before{content:'';position:absolute;top:-30px;right:-30px;width:120px;height:120px;border-radius:50%;background:rgba(255,255,255,0.12);}
+.pkg-card-header .pkg-icon{width:54px;height:54px;border-radius:14px;background:rgba(255,255,255,0.2);display:flex;align-items:center;justify-content:center;font-size:1.5rem;color:#fff;margin-bottom:14px;}
+.pkg-card-header h3{color:#fff;font-size:1.15rem;font-weight:700;margin:0 0 6px;}
+.pkg-card-header .param-badge{display:inline-flex;align-items:center;gap:5px;background:rgba(255,255,255,0.2);color:#fff;font-size:0.78rem;font-weight:600;padding:4px 12px;border-radius:50px;}
+.pkg-card-body{padding:20px 24px;flex:1;}
+.pkg-card-body p{font-size:0.88rem;color:#555;line-height:1.65;margin-bottom:14px;}
+.pkg-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px;}
+.pkg-tag{background:#f0f7ff;color:#0075BB;font-size:0.72rem;font-weight:600;padding:3px 10px;border-radius:50px;}
+.pkg-card-footer{padding:16px 24px 20px;border-top:1px solid #f0f2f7;display:flex;align-items:center;justify-content:space-between;gap:10px;}
+.pkg-price-block .pkg-mrp{font-size:0.78rem;color:#999;text-decoration:line-through;}
+.pkg-price-block .pkg-price{font-size:1.5rem;font-weight:800;color:var(--blue);}
+.pkg-price-block .pkg-off{background:var(--green);color:#fff;font-size:0.7rem;font-weight:700;padding:2px 8px;border-radius:50px;margin-left:6px;vertical-align:middle;}
+.wa-book-btn{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#25D366,#128C7E);color:#fff;padding:10px 18px;border-radius:50px;font-weight:700;font-size:0.85rem;text-decoration:none;transition:.25s;white-space:nowrap;}
+.wa-book-btn:hover{transform:scale(1.04);box-shadow:0 4px 16px rgba(37,211,102,0.35);}
+/* INDIVIDUAL TEST CARDS */
+.test-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px;margin-top:16px;}
+.test-card{background:#fff;border-radius:16px;padding:20px;box-shadow:0 2px 16px rgba(0,0,0,0.07);transition:all .3s cubic-bezier(.4,0,.2,1);display:flex;align-items:center;gap:16px;cursor:pointer;border:2px solid transparent;position:relative;overflow:hidden;}
+.test-card::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at var(--rx,50%) var(--ry,50%),rgba(0,117,187,0.12) 0%,transparent 70%);opacity:0;transition:opacity .3s;pointer-events:none;}
+.test-card:hover{border-color:var(--blue);transform:translateY(-4px);box-shadow:0 10px 32px rgba(0,117,187,0.16);}
+.test-card:hover::after{opacity:1;}
+.test-card.tap-anim{animation:testTap .4s ease-out;}
+@keyframes testTap{0%{transform:scale(1);}30%{transform:scale(0.96);}60%{transform:scale(1.03);}100%{transform:scale(1);}}
+.test-icon{width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0;transition:transform .3s;}
+.test-card:hover .test-icon{transform:scale(1.1) rotate(-4deg);}
+.test-info{flex:1;min-width:0;}
+.test-info h5{font-size:0.92rem;font-weight:700;color:#1a1a2e;margin:0 0 3px;white-space:normal;}
+.test-info .test-desc{font-size:0.78rem;color:#888;margin:0 0 8px;}
+.test-info .test-rate{font-size:1.1rem;font-weight:800;color:var(--blue);}
+.test-info .test-mrp{font-size:0.75rem;color:#bbb;text-decoration:line-through;margin-left:4px;font-weight:500;}
+.test-card .wa-mini-btn{display:inline-flex;align-items:center;gap:5px;background:linear-gradient(135deg,#25D366,#128C7E);color:#fff;padding:6px 14px;border-radius:50px;font-size:0.75rem;font-weight:700;text-decoration:none;transition:all .2s;margin-top:6px;}
+.test-card .wa-mini-btn:hover{transform:scale(1.06);box-shadow:0 4px 14px rgba(37,211,102,0.35);}
+/* SECTION TABS */
+.section-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px;}
+.stab{padding:10px 22px;border-radius:50px;border:2px solid #e0eaf4;font-weight:600;font-size:0.88rem;cursor:pointer;background:#fff;color:#555;transition:all .28s cubic-bezier(.4,0,.2,1);font-family:'Outfit',sans-serif;}
+.stab:hover{border-color:var(--blue);color:var(--blue);}
+.stab.active{background:var(--blue);color:#fff;border-color:var(--blue);box-shadow:0 4px 14px rgba(0,117,187,0.28);}
+.pkg-section{animation:fadeSlideUp .4s ease-out both;}
+@keyframes fadeSlideUp{from{opacity:0;transform:translateY(18px);}to{opacity:1;transform:translateY(0);}}
+.no-results{text-align:center;padding:60px 20px;color:#999;}
+.no-results i{font-size:3rem;margin-bottom:12px;color:#dde;display:block;}
+.gradient-1{background:linear-gradient(135deg,#0075BB,#004a80);}
+.gradient-2{background:linear-gradient(135deg,#42AF55,#2e8a3e);}
+.gradient-3{background:linear-gradient(135deg,#ED1C24,#b01019);}
+.gradient-4{background:linear-gradient(135deg,#f57c00,#e65100);}
+.gradient-5{background:linear-gradient(135deg,#6a1b9a,#4a148c);}
+.gradient-6{background:linear-gradient(135deg,#00838f,#006064);}
+.gradient-7{background:linear-gradient(135deg,#558b2f,#33691e);}
+.gradient-8{background:linear-gradient(135deg,#c62828,#b71c1c);}
+@media(max-width:600px){.pkg-grid{grid-template-columns:1fr;}.test-grid{grid-template-columns:1fr;}}
+</style>
+<style>
+@keyframes pageIn { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:translateY(0); } }
+.page-exit { animation: pageOut 0.25s ease-in forwards; }
+@keyframes pageOut { from { opacity:1; } to { opacity:0; transform:translateY(-6px); } }
+</style>
+</head>
+<body>
+<div class="floating-buttons" id="floatingButtons">
+  <a href="tel:8264423443" class="float-btn float-call"><i class="fa-solid fa-phone"></i><span class="float-label">Call Us</span></a>
+  <a href="https://wa.me/918264423443?text=Hello,%20I%20want%20to%20book%20a%20blood%20test%20in%20Mohali." target="_blank" class="float-btn float-wa"><i class="fa-brands fa-whatsapp"></i><span class="float-label">WhatsApp</span></a>
+</div>
+<header class="header" id="header">
+  <div class="header-top-bar"><div class="container htb-inner">
+    <span><i class="fa-solid fa-location-dot"></i> Booth No. 12, Gmada market, Near Gurukul World School, Sector 69, SAS Nagar, Mohali, 160069</span>
+    <span><i class="fa-solid fa-clock"></i> Open 24 Hours | 7 Days</span>
+    <a href="tel:8264423443"><i class="fa-solid fa-phone-volume"></i> 82644-23443</a>
+  </div></div>
+  <div class="container header-container">
+    <a href="index.html" class="logo"><img src="assets/images/srl-logo-new.svg" alt="SRL Lab Mohali" class="logo-img srl-logo-img"><div class="logo-sub">Sector 69, Mohali</div></a>
+    <nav class="navbar" id="navbar"><ul class="nav-list" id="navList">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">About Us</a></li>
+      <li><a href="tests.html" class="nav-link active">Tests & Rates</a></li>
+      <li><a href="home-collection.html" class="nav-link">Home Collection</a></li>
+      <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+      <li><a href="faq.html" class="nav-link">FAQ</a></li>
+      <li><a href="blog.html" class="nav-link">Blog</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul></nav>
+    <div class="header-actions">
+      <a href="tel:8264423443" class="btn btn-primary btn-call"><i class="fa-solid fa-phone-volume"></i> 82644-23443</a>
+      <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+</header>
+
+<main style="margin-top:104px;">
+
+<!-- ===== HERO + LIVE SEARCH ===== -->
+<section class="search-wrap">
+  <div class="container" style="text-align:center;">
+    <p class="section-tag" style="color:#fff;background:rgba(255,255,255,0.15);">Tests & Price List 2026</p>
+    <h1 style="font-size:2.4rem;color:#fff;margin:10px 0 6px;">Find Your Blood Test & Book via WhatsApp</h1>
+    <p style="color:rgba(255,255,255,0.82);max-width:560px;margin:0 auto;">Official SRL Chandigarh rates. Search any test below and book instantly on WhatsApp.</p>
+    <div class="search-box">
+      <input type="text" id="testSearch" placeholder="🔍  Search test… e.g. CBC, Thyroid, Vitamin D, Lipid…" autocomplete="off">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+    <div class="search-filters">
+      <button class="filter-btn active" data-cat="all">All Tests</button>
+      <button class="filter-btn" data-cat="blood">Blood</button>
+      <button class="filter-btn" data-cat="thyroid">Thyroid</button>
+      <button class="filter-btn" data-cat="diabetes">Diabetes</button>
+      <button class="filter-btn" data-cat="heart">Heart</button>
+      <button class="filter-btn" data-cat="kidney">Kidney</button>
+      <button class="filter-btn" data-cat="liver">Liver</button>
+      <button class="filter-btn" data-cat="vitamins">Vitamins</button>
+      <button class="filter-btn" data-cat="package">Packages</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LIVE SEARCH RESULTS ===== -->
+<section class="py-section" id="searchResults" style="display:none;background:#f8fafe;">
+  <div class="container">
+    <div class="results-bar">
+      <span class="results-count" id="resultsCount"></span>
+      <button onclick="clearSearch()" style="border:none;background:none;color:var(--blue);font-weight:600;cursor:pointer;font-family:'Outfit',sans-serif;">✕ Clear Search</button>
+    </div>
+    <div class="test-grid" id="searchGrid"></div>
+    <div class="no-results" id="noResults" style="display:none;"><i class="fa-solid fa-magnifying-glass"></i><p>No tests found. Try a different keyword.<br><a href="tel:8264423443" style="color:var(--blue);font-weight:700;">Call us</a> and we'll help you find the right test.</p></div>
+  </div>
+</section>
+
+<!-- ===== HEALTH PACKAGES ===== -->
+<section class="py-section" id="packagesSection">
+  <div class="container">
+    <div class="section-header text-center reveal-up">
+      <p class="section-tag">Health Packages</p>
+      <h2 class="section-title">SRL Complete Care Packages – Mohali</h2>
+      <p class="section-desc">Full body checkup packages from ₹399. Official SRL Chandigarh pricing. Free home collection included in Mohali, Kharar, and Tricity.</p>
+    </div>
+    <div class="section-tabs" style="margin-top:30px;">
+      <button class="stab active" data-pkg="active">Active Series</button>
+      <button class="stab" data-pkg="active">Active Series</button>
+      <button class="stab" data-pkg="special">Specialty</button>
+    </div>
+
+    <!-- ACTIVE PACKAGES -->
+    <div id="pkg-active" class="pkg-section">
+      <div class="pkg-grid">
+        <div class="pkg-card reveal-up" style="--delay:0.1s">
+          <div class="pkg-card-header gradient-2">
+            <div class="pkg-icon"><i class="fa-solid fa-star"></i></div>
+            <h3>Complete Care Active Pro Mini</h3>
+            <span class="param-badge"><i class="fa-solid fa-flask"></i> 5 Parameters</span>
+          </div>
+          <div class="pkg-card-body">
+            <p>The perfect starter health check. Covers essential parameters to get a basic picture of your health status.</p>
+            <div class="pkg-tags"><span class="pkg-tag">CBC</span><span class="pkg-tag">Blood Sugar</span><span class="pkg-tag">Basic Kidney</span><span class="pkg-tag">Starter</span></div>
+          </div>
+          <div class="pkg-card-footer">
+            <div class="pkg-price-block"><div class="pkg-price">₹399</div></div>
+            <a href="https://wa.me/918264423443?text=Hello!%20I%20want%20to%20book%20*Complete%20Care%20Active%20Mini%20(5%20params%20-%20%E2%82%B9399)*%20at%20SRL%20Mohali.%20Please%20confirm%20slot." target="_blank" class="wa-book-btn"><i class="fa-brands fa-whatsapp"></i> Book Now</a>
+          </div>
+        </div>
+        <div class="pkg-card reveal-up" style="--delay:0.2s">
+          <div class="pkg-card-header gradient-1">
+            <div class="pkg-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+            <h3>Complete Care Active Pro Basic</h3>
+            <span class="param-badge"><i class="fa-solid fa-flask"></i> 63 Parameters</span>
+          </div>
+          <div class="pkg-card-body">
+            <p>Comprehensive health check for everyday wellness. Covers blood count, sugar, thyroid, kidney, liver and more.</p>
+            <div class="pkg-tags"><span class="pkg-tag">CBC</span><span class="pkg-tag">Thyroid</span><span class="pkg-tag">Blood Sugar</span><span class="pkg-tag">Kidney</span><span class="pkg-tag">Liver</span></div>
+          </div>
+          <div class="pkg-card-footer">
+            <div class="pkg-price-block"><div class="pkg-price">₹1,199</div></div>
+            <a href="https://wa.me/918264423443?text=Hello!%20I%20want%20to%20book%20*Complete%20Care%20Active%20Basic%20(63%20params%20-%20%E2%82%B91%2C199)*%20at%20SRL%20Mohali.%20Please%20confirm." target="_blank" class="wa-book-btn"><i class="fa-brands fa-whatsapp"></i> Book Now</a>
+          </div>
+        </div>
+        <div class="pkg-card reveal-up" style="--delay:0.3s">
+          <div class="pkg-card-header gradient-5">
+            <div class="pkg-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3>Complete Care Active Pro</h3>
+            <span class="param-badge"><i class="fa-solid fa-flask"></i> 75 Parameters</span>
+          </div>
+          <div class="pkg-card-body">
+            <p>Advanced wellness check including vitamin profiles, hormones and a complete metabolic panel.</p>
+            <div class="pkg-tags"><span class="pkg-tag">Hormones</span><span class="pkg-tag">Vitamins</span><span class="pkg-tag">Full Metabolic</span><span class="pkg-tag">Lipid</span></div>
+          </div>
+          <div class="pkg-card-footer">
+            <div class="pkg-price-block"><div class="pkg-price">₹2,099</div></div>
+            <a href="https://wa.me/918264423443?text=Hello!%20I%20want%20to%20book%20*Complete%20Care%20Active%20(75%20params%20-%20%E2%82%B92%2C099)*%20at%20SRL%20Mohali.%20Please%20confirm." target="_blank" class="wa-book-btn"><i class="fa-brands fa-whatsapp"></i> Book Now</a>
+          </div>
+        </div>
+        <div class="pkg-card reveal-up" style="--delay:0.1s" style="border:2px solid var(--blue);">
+          <div class="pkg-card-header gradient-3">
+            <div class="pkg-icon"><i class="fa-solid fa-crown"></i></div>
+            <h3>Complete Care Active Pro ⭐</h3>
+            <span class="param-badge"><i class="fa-solid fa-flask"></i> 92 Parameters</span>
+          </div>
+          <div class="pkg-card-body">
+            <p>Best value! Most comprehensive active package with complete vitamin, hormone, and organ health panels.</p>
+            <div class="pkg-tags"><span class="pkg-tag">92 Params</span><span class="pkg-tag">Vitamin D & B12</span><span class="pkg-tag">Full Hormones</span><span class="pkg-tag">Best Value</span></div>
+          </div>
+          <div class="pkg-card-footer">
+            <div class="pkg-price-block"><div class="pkg-mrp">₹3,699</div><div class="pkg-price">₹2,599<span class="pkg-off">30% OFF</span></div></div>
+            <a href="https://wa.me/918264423443?text=Hello!%20I%20want%20to%20book%20*Complete%20Care%20Active%20Pro%20(92%20params%20-%20%E2%82%B92%2C599)*%20at%20SRL%20Mohali." target="_blank" class="wa-book-btn"><i class="fa-brands fa-whatsapp"></i> Book Now</a>
+          </div>
+        </div>
+        <div class="pkg-card reveal-up" style="--delay:0.2s">
+          <div class="pkg-card-header gradient-4">
+            <div class="pkg-icon"><i class="fa-solid fa-heart"></i></div>
+            <h3>Diabetes & Heart Package</h3>
+            <span class="param-badge"><i class="fa-solid fa-flask"></i> 70 Parameters</span>
+          </div>
+          <div class="pkg-card-body">
+            <p>Focused on glucose control (HbA1c), complete lipid panel and cardiac risk markers. Ideal for diabetics.</p>
+            <div class="pkg-tags"><span class="pkg-tag">HbA1c</span><span class="pkg-tag">Lipid Profile</span><span class="pkg-tag">Cardiac</span><span class="pkg-tag">Diabetes</span></div>
+          </div>
+          <div class="pkg-card-footer">
+            <div class="pkg-price-block"><div class="pkg-price">₹1,499</div></div>
+            <a href="https://wa.me/918264423443?text=Hello!%20I%20want%20to%20book%20*Diabetes%20%26%20Heart%20Package%20(70%20params%20-%20%E2%82%B91%2C499)*%20at%20SRL%20Mohali." target="_blank" class="wa-book-btn"><i class="fa-brands fa-whatsapp"></i> Book Now</a>
+          </div>
+        </div>
+        <div class="pkg-card reveal-up" style="--delay:0.3s">
+          <div class="pkg-card-header gradient-6">
+            <div class="pkg-icon"><i class="fa-solid fa-bolt"></i></div>
+            <h3>Diabetes & Heart Advance</h3>
+            <span class="param-badge"><i class="fa-solid fa-flask"></i> 103 Parameters</span>
+          </div>
+          <div class="pkg-card-body">
+            <p>Extended cardiac and diabetes panel including liver, kidney, full hormones and vitamin analysis.</p>
+            <div class="pkg-tags"><span class="pkg-tag">103 Params</span><span class="pkg-tag">Advanced Cardiac</span><span class="pkg-tag">Vitamins</span></div>
+          </div>
+          <div class="pkg-card-footer">
+            <div class="pkg-price-block"><div class="pkg-price">₹3,499</div></div>
+            <a href="https://wa.me/918264423443?text=Hello!%20I%20want%20to%20book%20*Diabetes%20%26%20Heart%20Advance%20(103%20params%20-%20%E2%82%B93%2C499)*%20at%20SRL%20Mohali." target="_blank" class="wa-book-btn"><i class="fa-brands fa-whatsapp"></i> Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ACTIVE PACKAGES -->
+    <div id="pkg-active" class="pkg-section" style="display:none;">
+      <div class="pkg-grid">
+        <div class="pkg-card reveal-up" style="--delay:0.1s">
+          <div class="pkg-card-header gradient-2">
+            <div class="pkg-icon"><i class="fa-solid fa-person-running"></i></div>
+            <h3>Complete Care Active – Men</h3>
+            <span class="param-badge"><i class="fa-solid fa-flask"></i> 97 Parameters</span>
+          </div>
+          <div class="pkg-card-body">
+            <p>Designed for working men. Includes testosterone, PSA, complete metabolic, heart and immunity panel.</p>
+            <div class="pkg-tags"><span class="pkg-tag">Testosterone</span><span class="pkg-tag">PSA</span><span class="pkg-tag">Heart</span><span class="pkg-tag">Men Only</span></div>
+          </div>
+          <div class="pkg-card-footer">
+            <div class="pkg-price-block"><div class="pkg-price">₹3,099</div></div>
+            <a href="https://wa.me/918264423443?text=Hello!%20I%20want%20to%20book%20*Complete%20Care%20Active%20Men%20(97%20params%20-%20%E2%82%B93%2C099)*%20at%20SRL%20Mohali." target="_blank" class="wa-book-btn"><i class="fa-brands fa-whatsapp"></i> Book Now</a>
+          </div>
+        </div>
+        <div class="pkg-card reveal-up" style="--delay:0.2s">
+          <div class="pkg-card-header gradient-5">
+            <div class="pkg-icon"><i class="fa-solid fa-person-dress"></i></div>
+            <h3>Complete Care Active – Women</h3>
+            <span class="param-badge"><i class="fa-solid fa-flask"></i> 97 Parameters</span>
+          </div>
+          <div class="pkg-card-body">
+            <p>For working women. Includes PCOD panel, thyroid, iron, bone health and complete metabolic check.</p>
+            <div class="pkg-tags"><span class="pkg-tag">PCOD</span><span class="pkg-tag">Thyroid</span><span class="pkg-tag">Iron</span><span class="pkg-tag">Bone Health</span></div>
+          </div>
+          <div class="pkg-card-footer">
+            <div class="pkg-price-block"><div class="pkg-price">₹3,099</div></div>
+            <a href="https://wa.me/918264423443?text=Hello!%20I%20want%20to%20book%20*Complete%20Care%20Active%20Women%20(97%20params%20-%20%E2%82%B93%2C099)*%20at%20SRL%20Mohali." target="_blank" class="wa-book-btn"><i class="fa-brands fa-whatsapp"></i> Book Now</a>
+          </div>
+        </div>
+        <div class="pkg-card reveal-up pkg-highlight" style="--delay:0.3s">
+          <div class="pkg-card-header gradient-3">
+            <div class="pkg-icon"><i class="fa-solid fa-user-shield"></i></div>
+            <h3>Complete Care Active Pro ⭐</h3>
+            <span class="param-badge"><i class="fa-solid fa-flask"></i> 101 Parameters</span>
+          </div>
+          <div class="pkg-card-body">
+            <p>Premium active panel with cardiac enzymes, stress markers, full hormones, and comprehensive immunity check.</p>
+            <div class="pkg-tags"><span class="pkg-tag">101 Params</span><span class="pkg-tag">Cardiac Enzymes</span><span class="pkg-tag">Stress Markers</span></div>
+          </div>
+          <div class="pkg-card-footer">
+            <div class="pkg-price-block"><div class="pkg-price">₹4,199</div></div>
+            <a href="https://wa.me/918264423443?text=Hello!%20I%20want%20to%20book%20*Complete%20Care%20Active%20Pro%20(101%20params%20-%20%E2%82%B94%2C199)*%20at%20SRL%20Mohali." target="_blank" class="wa-book-btn"><i class="fa-brands fa-whatsapp"></i> Book Now</a>
+          </div>
+        </div>
+        <div class="pkg-card reveal-up" style="--delay:0.1s">
+          <div class="pkg-card-header gradient-1">
+            <div class="pkg-icon"><i class="fa-solid fa-crown"></i></div>
+            <h3>Complete Care Premium</h3>
+            <span class="param-badge"><i class="fa-solid fa-flask"></i> 107 Parameters</span>
+          </div>
+          <div class="pkg-card-body">
+            <p>The most comprehensive health package available in Mohali. 107 parameters covering every aspect of health.</p>
+            <div class="pkg-tags"><span class="pkg-tag">107 Params</span><span class="pkg-tag">All Organs</span><span class="pkg-tag">Full Vitamins</span><span class="pkg-tag">Men & Women</span></div>
+          </div>
+          <div class="pkg-card-footer">
+            <div class="pkg-price-block"><div class="pkg-price">₹6,699</div></div>
+            <a href="https://wa.me/918264423443?text=Hello!%20I%20want%20to%20book%20*Complete%20Care%20Premium%20(107%20params%20-%20%E2%82%B96%2C699)*%20at%20SRL%20Mohali." target="_blank" class="wa-book-btn"><i class="fa-brands fa-whatsapp"></i> Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SPECIALTY PACKAGES -->
+    <div id="pkg-special" class="pkg-section" style="display:none;">
+      <div class="pkg-grid">
+        <div class="pkg-card reveal-up" style="--delay:0.1s">
+          <div class="pkg-card-header gradient-7">
+            <div class="pkg-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <h3>Student Basic Package</h3>
+            <span class="param-badge"><i class="fa-solid fa-flask"></i> 79 Parameters</span>
+          </div>
+          <div class="pkg-card-body">
+            <p>Designed for students. Immunity, vitamins, hormones, anaemia, and nutritional health check.</p>
+            <div class="pkg-tags"><span class="pkg-tag">Immunity</span><span class="pkg-tag">Vitamins</span><span class="pkg-tag">Iron</span><span class="pkg-tag">Students</span></div>
+          </div>
+          <div class="pkg-card-footer">
+            <div class="pkg-price-block"><div class="pkg-price">₹2,499</div></div>
+            <a href="https://wa.me/918264423443?text=Hello!%20I%20want%20to%20book%20*Student%20Basic%20Package%20(79%20params%20-%20%E2%82%B92%2C499)*%20at%20SRL%20Mohali." target="_blank" class="wa-book-btn"><i class="fa-brands fa-whatsapp"></i> Book Now</a>
+          </div>
+        </div>
+        <div class="pkg-card reveal-up" style="--delay:0.2s">
+          <div class="pkg-card-header gradient-4">
+            <div class="pkg-icon"><i class="fa-solid fa-dumbbell"></i></div>
+            <h3>Student Athlete Package</h3>
+            <span class="param-badge"><i class="fa-solid fa-flask"></i> 92 Parameters</span>
+          </div>
+          <div class="pkg-card-body">
+            <p>For young athletes – performance hormones, iron panel, cardiac readiness and full fitness screening.</p>
+            <div class="pkg-tags"><span class="pkg-tag">Performance</span><span class="pkg-tag">Cardiac</span><span class="pkg-tag">Iron Panel</span><span class="pkg-tag">Athletes</span></div>
+          </div>
+          <div class="pkg-card-footer">
+            <div class="pkg-price-block"><div class="pkg-price">₹4,499</div></div>
+            <a href="https://wa.me/918264423443?text=Hello!%20I%20want%20to%20book%20*Student%20Athlete%20Package%20(92%20params%20-%20%E2%82%B94%2C499)*%20at%20SRL%20Mohali." target="_blank" class="wa-book-btn"><i class="fa-brands fa-whatsapp"></i> Book Now</a>
+          </div>
+        </div>
+        <div class="pkg-card reveal-up" style="--delay:0.3s">
+          <div class="pkg-card-header gradient-5">
+            <div class="pkg-icon"><i class="fa-solid fa-ring"></i></div>
+            <h3>Pre-Marriage Package</h3>
+            <span class="param-badge"><i class="fa-solid fa-flask"></i> 71 Parameters</span>
+          </div>
+          <div class="pkg-card-body">
+            <p>Complete pre-marriage health screen for couples. Includes genetic markers, sexual health and full metabolic panel.</p>
+            <div class="pkg-tags"><span class="pkg-tag">Couples</span><span class="pkg-tag">Genetic</span><span class="pkg-tag">Hormones</span><span class="pkg-tag">Full Panel</span></div>
+          </div>
+          <div class="pkg-card-footer">
+            <div class="pkg-price-block"><div class="pkg-price">₹2,999</div></div>
+            <a href="https://wa.me/918264423443?text=Hello!%20I%20want%20to%20book%20*Pre-Marriage%20Package%20(71%20params%20-%20%E2%82%B92%2C999)*%20at%20SRL%20Mohali." target="_blank" class="wa-book-btn"><i class="fa-brands fa-whatsapp"></i> Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== INDIVIDUAL TESTS ===== -->
+<section class="py-section bg-light" id="individualTests">
+  <div class="container">
+    <div class="section-header text-center reveal-up">
+      <p class="section-tag">Individual Test Rates</p>
+      <h2 class="section-title">All Blood Tests – SRL Lab Mohali Price List 2026</h2>
+      <p class="section-desc">Official SRL Chandigarh rates. Click any test to book instantly via WhatsApp.</p>
+    </div>
+    <div class="test-grid" id="allTestsGrid" style="margin-top:30px;">
+      <!-- Populated by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="background:linear-gradient(135deg,#25D366,#128C7E);padding:60px 0;text-align:center;">
+  <div class="container reveal-up">
+    <h2 style="color:#fff;margin-bottom:12px;font-size:2rem;">Book Any Test via WhatsApp – Open 24 Hours</h2>
+    <p style="color:rgba(255,255,255,0.88);max-width:500px;margin:0 auto 28px;">Free home collection above ₹500. Certified phlebotomist at your door. Reports in 24 hours.</p>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+      <a href="https://wa.me/918264423443?text=Hello!%20I%20want%20to%20book%20a%20blood%20test%20at%20SRL%20Lab%20Mohali.%20Please%20share%20details." target="_blank" class="wa-book-btn" style="padding:14px 28px;font-size:1rem;"><i class="fa-brands fa-whatsapp"></i> WhatsApp to Book</a>
+      <a href="tel:8264423443" class="btn btn-primary btn-lg"><i class="fa-solid fa-phone"></i> Call – 82644-23443</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="footer-main"><div class="container footer-grid">
+    <div class="footer-brand"><img src="assets/images/srl-logo-new.svg" alt="SRL Lab Mohali Tests" class="footer-logo srl-logo-img"><p class="footer-tagline">Official SRL Lab blood test price list for Mohali/Chandigarh 2026. Book via WhatsApp.</p><div class="social-links"><a href="https://www.facebook.com/SRLLABMOHALI/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a><a href="https://www.instagram.com/reel/DR4wgQ0klbr/" target="_blank"><i class="fa-brands fa-instagram"></i></a><a href="https://wa.me/918264423443" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></div></div>
+    <div class="footer-links"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="tests.html">Tests & Rates</a></li><li><a href="home-collection.html">Home Collection</a></li><li><a href="reviews.html">Reviews</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="footer-services"><h4>Popular Tests</h4><ul><li>CBC – ₹250</li><li>Thyroid Panel – ₹750</li><li>Lipid Profile – ₹730</li><li>HbA1c – ₹425</li><li>Vitamin D – ₹900</li><li>KFT – ₹730</li></ul></div>
+    <div class="footer-contact-info"><h4>Contact Info</h4><ul><li><i class="fa-solid fa-location-dot"></i> Booth No. 12, Gmada market, Near Gurukul World School, Sector 69, SAS Nagar, Mohali, 160069</li><li><i class="fa-solid fa-phone"></i> <a href="tel:8264423443">+91 82644 23443</a></li><li><i class="fa-solid fa-clock"></i> Open 24 Hours | 7 Days</li></ul></div>
+  </div></div>
+  <div class="footer-bottom"><div class="container footer-bottom-inner"><p>&copy; 2026 SRL Lab Mohali – Sector 69, Mohali. All Rights Reserved.</p><p class="footer-keywords">Blood Test Price List Mohali | SRL Chandigarh Rates | CBC Thyroid Lipid Cost Mohali</p></div></div>
+</footer>
+<script src="assets/js/script.js"></script>
+<script>
+// ===== TEST DATA – Official SRL Chandigarh Rates 2026 =====
+const TESTS = [
+  // BLOOD
+  {name:"CBC – Complete Blood Count",cat:"blood",icon:"fa-droplet",color:"#0075BB",price:"₹250",mrp:"₹375",desc:"31 parameters – detects anemia, infection & blood disorders"},
+  {name:"CBC with ESR",cat:"blood",icon:"fa-droplet",color:"#0075BB",price:"₹350",desc:"36 parameters – CBC plus sedimentation rate"},
+  {name:"Blood Group & Rh Factor",cat:"blood",icon:"fa-droplet",color:"#ED1C24",price:"₹80",desc:"ABO blood group and Rh typing"},
+  {name:"Dengue NS1 Antigen",cat:"blood",icon:"fa-virus",color:"#ED1C24",price:"₹600",desc:"Early dengue fever detection – NS1 rapid"},
+  {name:"Malaria Rapid Test",cat:"blood",icon:"fa-bug",color:"#42AF55",price:"₹350",desc:"Rapid card test for P. falciparum & P. vivax"},
+  {name:"Widal Test",cat:"blood",icon:"fa-bacteria",color:"#f57c00",price:"₹200",desc:"Typhoid fever antibody test"},
+  {name:"CRP (C-Reactive Protein)",cat:"blood",icon:"fa-shield-virus",color:"#6a1b9a",price:"₹440",mrp:"₹470",desc:"Inflammation and active infection marker"},
+  {name:"ESR",cat:"blood",icon:"fa-clock",color:"#00838f",price:"₹120",desc:"Erythrocyte sedimentation rate"},
+  {name:"Urine Routine & Microscopy",cat:"blood",icon:"fa-flask-vial",color:"#00838f",price:"₹120",mrp:"₹130",desc:"Complete physical & chemical urine analysis"},
+  {name:"Urine Culture & Sensitivity",cat:"blood",icon:"fa-flask-vial",color:"#c62828",price:"₹470",mrp:"₹1,150",desc:"Bacterial culture + antibiotic sensitivity"},
+  {name:"Hepatitis B (HBsAg)",cat:"blood",icon:"fa-virus",color:"#ED1C24",price:"₹350",desc:"Hepatitis B surface antigen test"},
+  {name:"HIV Rapid Test",cat:"blood",icon:"fa-shield-virus",color:"#b01019",price:"₹500",desc:"HIV 1 & 2 screening"},
+  {name:"Fever Panel – Comprehensive",cat:"blood",icon:"fa-temperature-high",color:"#ED1C24",price:"₹1,999",desc:"75 params – Dengue, Malaria, Typhoid, CBC & more"},
+  // THYROID
+  {name:"TSH (Thyroid Stimulating Hormone)",cat:"thyroid",icon:"fa-atom",color:"#0075BB",price:"₹220",mrp:"₹380",desc:"1 parameter – most sensitive thyroid screening"},
+  {name:"Free Thyroid Panel (FT3, FT4, TSH)",cat:"thyroid",icon:"fa-atom",color:"#0075BB",price:"₹750",mrp:"₹1,050",desc:"3 parameters – complete thyroid function test"},
+  {name:"T3 + T4 + TSH (Total)",cat:"thyroid",icon:"fa-atom",color:"#6a1b9a",price:"₹450",desc:"Standard thyroid profile"},
+  {name:"Anti-TPO Antibody",cat:"thyroid",icon:"fa-shield-halved",color:"#ED1C24",price:"₹1,850",desc:"Thyroid autoimmune antibodies"},
+  // DIABETES
+  {name:"Glucose Fasting",cat:"diabetes",icon:"fa-vial",color:"#42AF55",price:"₹50",mrp:"₹120",desc:"Fasting blood sugar level"},
+  {name:"Glucose Post Prandial (PP)",cat:"diabetes",icon:"fa-vial",color:"#42AF55",price:"₹50",desc:"Post-meal blood sugar level"},
+  {name:"HbA1c (Glycosylated Hemoglobin)",cat:"diabetes",icon:"fa-chart-line",color:"#ED1C24",price:"₹425",mrp:"₹475",desc:"2 parameters – 3-month average sugar control"},
+  {name:"Insulin Fasting",cat:"diabetes",icon:"fa-syringe",color:"#f57c00",price:"₹550",desc:"Insulin resistance screening"},
+  {name:"HOMA-IR",cat:"diabetes",icon:"fa-calculator",color:"#6a1b9a",price:"₹650",desc:"Insulin resistance index calculation"},
+  // HEART
+  {name:"Lipid Profile",cat:"heart",icon:"fa-heart-pulse",color:"#ED1C24",price:"₹730",desc:"8 parameters – cholesterol & cardiovascular risk"},
+  {name:"hsCRP (High Sensitivity CRP)",cat:"heart",icon:"fa-heart",color:"#b01019",price:"₹500",desc:"Cardiac inflammation marker"},
+  {name:"Troponin I",cat:"heart",icon:"fa-heart-crack",color:"#ED1C24",price:"₹700",desc:"Heart attack marker – acute chest pain"},
+  {name:"Homocysteine",cat:"heart",icon:"fa-heart",color:"#6a1b9a",price:"₹750",desc:"Cardiovascular risk factor"},
+  // KIDNEY
+  {name:"Kidney Function Test (KFT)",cat:"kidney",icon:"fa-kidneys",color:"#00838f",price:"₹730",mrp:"₹875",desc:"31 parameters – complete kidney function"},
+  {name:"Creatinine (Serum)",cat:"kidney",icon:"fa-flask",color:"#00838f",price:"₹150",mrp:"₹230",desc:"Kidney filtration marker"},
+  {name:"Uric Acid",cat:"kidney",icon:"fa-flask",color:"#558b2f",price:"₹180",desc:"Gout and kidney health"},
+  {name:"Urea (BUN)",cat:"kidney",icon:"fa-flask",color:"#00838f",price:"₹120",desc:"Blood urea nitrogen"},
+  // LIVER
+  {name:"Liver Function Test (LFT)",cat:"liver",icon:"fa-liver",color:"#f57c00",price:"₹630",mrp:"₹825",desc:"12 parameters – complete liver health panel"},
+  {name:"LFT with GGT",cat:"liver",icon:"fa-liver",color:"#f57c00",price:"₹950",desc:"LFT extended with gamma-GT enzyme"},
+  {name:"SGOT (AST)",cat:"liver",icon:"fa-flask",color:"#f57c00",price:"₹180",desc:"Liver enzyme marker"},
+  {name:"SGPT (ALT)",cat:"liver",icon:"fa-flask",color:"#f57c00",price:"₹180",desc:"Liver enzyme marker"},
+  {name:"Bilirubin Total + Direct",cat:"liver",icon:"fa-flask",color:"#FFCB05",price:"₹220",desc:"Jaundice diagnosis panel"},
+  // VITAMINS
+  {name:"Vitamin D (25-Hydroxy)",cat:"vitamins",icon:"fa-sun",color:"#f57c00",price:"₹1,550",mrp:"₹1,600",desc:"1 parameter – bone health & immunity"},
+  {name:"Vitamin B12",cat:"vitamins",icon:"fa-capsules",color:"#6a1b9a",price:"₹1,000",desc:"Nerve health & energy levels"},
+  {name:"Vitamin D + B12 Combo",cat:"vitamins",icon:"fa-sun",color:"#f57c00",price:"₹1,820",mrp:"₹2,100",desc:"Dual vitamin economy panel"},
+  {name:"Calcium (Serum)",cat:"vitamins",icon:"fa-bone",color:"#00838f",price:"₹300",mrp:"₹340",desc:"1 parameter – bone and muscle health"},
+  {name:"Iron Studies (Fe, TIBC)",cat:"vitamins",icon:"fa-circle",color:"#ED1C24",price:"₹400",desc:"Iron deficiency screening panel"},
+  {name:"Ferritin",cat:"vitamins",icon:"fa-circle",color:"#ED1C24",price:"₹600",desc:"Iron storage protein marker"},
+  {name:"Total IgE",cat:"vitamins",icon:"fa-shield-virus",color:"#6a1b9a",price:"₹900",mrp:"₹1,200",desc:"1 parameter – allergy screening"},
+];
+
+// Render all tests
+function renderTests(list, containerId) {
+  const grid = document.getElementById(containerId);
+  if (!grid) return;
+  if (list.length === 0) { grid.innerHTML = ''; return; }
+  grid.innerHTML = list.map(t => `
+    <div class="test-card" onclick="tapBook(this,'${t.name}','${t.price}')">
+      <div class="test-icon" style="background:${t.color}1a;">
+        <i class="fa-solid ${t.icon}" style="color:${t.color};"></i>
+      </div>
+      <div class="test-info">
+        <h5>${t.name}</h5>
+        <div class="test-desc">${t.desc}</div>
+        <div style="display:flex;align-items:baseline;gap:4px;">
+          <div class="test-rate">${t.price}</div>
+          ${t.mrp ? `<div class="test-mrp">${t.mrp}</div>` : ''}
+        </div>
+        <a href="https://wa.me/918264423443?text=Hello!%20I%20want%20to%20book%20*${encodeURIComponent(t.name)}%20(${encodeURIComponent(t.price)})*%20at%20SRL%20Lab%20Mohali.%20Please%20confirm%20slot." target="_blank" class="wa-mini-btn" onclick="event.stopPropagation()"><i class="fa-brands fa-whatsapp"></i> Book Now</a>
+      </div>
+    </div>`).join('');
+}
+
+function bookTest(name, price) {
+  window.open(`https://wa.me/918264423443?text=Hello!%20I%20want%20to%20book%20*${encodeURIComponent(name)}%20(${encodeURIComponent(price)})*%20at%20SRL%20Lab%20Mohali.%20Please%20confirm%20slot.`, '_blank');
+}
+function tapBook(el, name, price) {
+  el.classList.remove('tap-anim');
+  void el.offsetWidth;
+  el.classList.add('tap-anim');
+  setTimeout(function(){ bookTest(name, price); }, 220);
+}
+
+renderTests(TESTS, 'allTestsGrid');
+
+// LIVE SEARCH
+const searchInput = document.getElementById('testSearch');
+const searchSection = document.getElementById('searchResults');
+const searchGrid = document.getElementById('searchGrid');
+const noResults = document.getElementById('noResults');
+const resultsCount = document.getElementById('resultsCount');
+let activeCategory = 'all';
+
+function applySearch() {
+  const q = searchInput.value.trim().toLowerCase();
+  const cat = activeCategory;
+  if (!q && cat === 'all') { searchSection.style.display = 'none'; document.getElementById('packagesSection').style.display = ''; document.getElementById('individualTests').style.display = ''; return; }
+  searchSection.style.display = 'block';
+  document.getElementById('packagesSection').style.display = 'none';
+  document.getElementById('individualTests').style.display = 'none';
+  let results = TESTS.filter(t => {
+    const matchCat = cat === 'all' || cat === 'package' ? true : t.cat === cat;
+    const matchQ = !q || t.name.toLowerCase().includes(q) || t.desc.toLowerCase().includes(q) || t.cat.toLowerCase().includes(q);
+    return matchCat && matchQ;
+  });
+  if (cat === 'package') results = [];
+  resultsCount.textContent = `Showing ${results.length} test${results.length !== 1 ? 's' : ''}${q ? ` for "${q}"` : ''}`;
+  noResults.style.display = results.length === 0 ? 'block' : 'none';
+  renderTests(results, 'searchGrid');
+}
+
+searchInput.addEventListener('input', applySearch);
+
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+    activeCategory = this.dataset.cat;
+    if (activeCategory === 'package') {
+      searchSection.style.display = 'none';
+      document.getElementById('packagesSection').style.display = '';
+      document.getElementById('individualTests').style.display = 'none';
+    } else { applySearch(); }
+  });
+});
+
+function clearSearch() {
+  searchInput.value = '';
+  activeCategory = 'all';
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  document.querySelector('[data-cat="all"]').classList.add('active');
+  searchSection.style.display = 'none';
+  document.getElementById('packagesSection').style.display = '';
+  document.getElementById('individualTests').style.display = '';
+}
+
+// PACKAGE TABS WITH FADE ANIMATION
+document.querySelectorAll('.stab').forEach(btn => {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.stab').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+    const targetId = 'pkg-' + this.dataset.pkg;
+    document.querySelectorAll('.pkg-section').forEach(s => {
+      if (s.id !== targetId) s.style.display = 'none';
+    });
+    const target = document.getElementById(targetId);
+    target.style.display = '';
+    target.style.animation = 'none';
+    void target.offsetWidth;
+    target.style.animation = 'fadeSlideUp 0.4s ease-out both';
+  });
+});
+</script>
+</body>
+</html>
